@@ -16,7 +16,7 @@
 <body>
 
 	<div class="main">
-
+		<input type = "hidden" id = "status" value = "<%= request.getAttribute("status") %>">
 		<!-- Sing in  Form -->
 		<section class="sign-in">
 			<div class="container">
@@ -76,6 +76,15 @@
 	<!-- JS -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="alert/dist/sweetalert.css">
+
+	<script type = "text/javascript">
+		var status = document.getElementById("status").value;
+		if (status == "failed") {
+			swal("Oops!", "These credentials didn't work.", "error");
+		}
+	</script>
 </body>
 <!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

@@ -50,7 +50,9 @@
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact Group 4</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="">Logout</a></li>
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="LogoutServlet">Logout</a></li>
+					<li class="nav-item mx-0 mx-lg-1 bg-danger"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="LogoutServlet"><%=session.getAttribute("name") %></a></li>
 					
 				</ul>
 			</div>
@@ -209,12 +211,6 @@
 				</div>
 			</div>
 			<!-- About Section Button-->
-			<div class="text-center mt-4">
-				<a class="btn btn-xl btn-outline-light"
-					href="https://startbootstrap.com/theme/freelancer/"> <i
-					class="fas fa-download me-2"></i> Free Download!
-				</a>
-			</div>
 		</div>
 	</section>
 	<!-- Contact Section-->
@@ -223,7 +219,7 @@
 			<!-- Contact Section Heading-->
 			<h2
 				class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact
-				Me</h2>
+				Us</h2>
 			<!-- Icon Divider-->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -314,7 +310,7 @@
 				<div class="col-lg-4 mb-5 mb-lg-0">
 					<h4 class="text-uppercase mb-4">Location</h4>
 					<p class="lead mb-0">
-						2215 John Daniel Drive <br /> Clark, MO 65243
+						Rochester, NY <br />
 					</p>
 				</div>
 				<!-- Footer Social Icons-->
